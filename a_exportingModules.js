@@ -4,7 +4,7 @@
  }
  let name  = "Sanvika"
 
- export const magicNumber =7;
+ export const magicNumber = 7;
 
  export function sum(num1 , num2){
     return num1 + num2;
