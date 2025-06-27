@@ -9,9 +9,12 @@
   <h1>This is a heading</h1>
   <p>This is a paragraph.</p>
   <script type = "module">
-   import sum from "./a_exportingModules.js" // window.color ="red"
+   import * as myNamespace from "./a_exportingModules.js" // window.color ="red"
 
-   console.log(sum(4,5));
+   console.log(myNamespace.sum(1,myNamespace.magicNumber)); //8
+   console.log(myNamespace.multiply(1,2)); //2
+   console.log(myNamespace.substract(35,10)); //25
+
 
    </script>
 </body>
