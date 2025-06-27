@@ -9,14 +9,21 @@
   <h1>This is a heading</h1>
   <p>This is a paragraph.</p>
   <script type = "text/javascript">
-    var  a = 1000;
-    var  b = a;
-    console.log(a);
-    console.log(b);
+function createFunction(){
+  var result = new Array(); 
+ 
+for(var i=0; i<10;i++){
+  result[i] = function (){
+    return i;
+  };
+}
+return result;
+}
 
-    var  a = 5000;
-    console.log(a);
-    console.log(b);
+  var funs = createFunction();
+  for( var i=0; i<funs.length;i++ ){
+    document.write(funs[i]() + "<br/>")
+  }
 
    </script>
 </body>

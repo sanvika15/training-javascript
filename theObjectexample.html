@@ -9,15 +9,19 @@
   <h1>This is a heading</h1>
   <p>This is a paragraph.</p>
   <script type = "text/javascript">
-    var  a = 1000;
-    var  b = a;
-    console.log(a);
-    console.log(b);
 
-    var  a = 5000;
-    console.log(a);
-    console.log(b);
+    var name = "The Window";
+    var object = {
+      name: "The Object",        
+      getNameFunc: function(){
+       return function(){
+        return this.name;
+       };
+      },           
+    };
+
+console.log(object.getNameFunc()());
 
    </script>
 </body>
-</html>
+</html>/
