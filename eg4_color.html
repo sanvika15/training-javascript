@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+  <script type = "text/javascript">
+    var color ="red";
+    function changeColor() {
+      var anotherColor="red";
+
+      function swapColor(){
+         var temp = anotherColor; //[swapColor(), changeColor() , window] //'red'
+         anotherColor = color; // search for color "blue" in changeColor() function //[swapColor(), changeColor(), window
+         color = temp;  //[swapColor(), changeColor(), window
+      }
+      swapColor();
+    }
+    changeColor();
+
+    console.log("Colour is now : " + color);
+   </script>
+</body>
+</html>

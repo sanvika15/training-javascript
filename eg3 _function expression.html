@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph.</p>
+  <script type = "text/javascript">
+
+    function abc() { //functional declaration hoisting
+     console.log("abc function is invoked")
+    }
+    abc()
+    
+    xyz = function() { //functional expression - name is anonymous function name is not xyz(identifier xyz knows the location of some function)
+     console.log("xyz function is invoked")
+    }
+    xyz(); //xyz is not a function it a identifier who knows the location of some function
+
+
+   </script>
+</body>
+</html>
