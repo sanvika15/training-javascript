@@ -9,22 +9,18 @@
   <h1>This is a heading</h1>
   <p>This is a paragraph.</p>
   <script type = "text/javascript">
-    if (true) { // non lexical scopes
-        let x = 100; // no hoisting 
 
-        x = 200;
-        console.log(x);
-    }
-    console.log(x);
-
-
-    function abc(){ //lexical scopes 
-      var y = "hello world" //no hoisting  -- keeps this local
+    function abc() { //functional declaration hoisting
+     console.log("abc function is invoked")
     }
     abc()
-    console.log(y)
+    
+    xyz = function() { //functional expression - name is anonymous function name is not xyz(identifier xyz knows the location of some function)
+     console.log("xyz function is invoked")
+    }
+    xyz(); //xyz is not a function it a identifier who knows the location of some function
 
 
-  </script>
+   </script>
 </body>
 </html>
